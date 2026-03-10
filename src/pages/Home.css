@@ -1,0 +1,365 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width:100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.carousel{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    position:relative;
+    padding: 20px;
+}
+
+.slides{
+    display:flex;
+    width:300%;
+ animation:  slide 20s infinite; 
+}
+
+.slide{
+    width:100%;
+     position:relative;
+}
+
+.slide img{
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+    filter:brightness(60%);
+}
+
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+    color:white;
+}
+
+.content h2{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.content p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.content button{
+    padding:12px 30px;
+    background:#ff4d6d;
+    border:none;
+    color:white;
+    font-size:16px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.content button:hover{
+    background:#e6004c;
+}
+ #slide1:checked ~ .slides{
+    transform:translateX(0%);
+}
+#slide2:checked ~ .slides{
+    transform:translateX(-100%);
+}
+#slide3:checked ~ .slides{
+    transform:translateX(-200%);
+} 
+  @keyframes slide{
+    0%,25% { transform:translateX(0); }
+    33% ,58% { transform:translateX(-100%); }
+    66% ,91% { transform:translateX(-200%); }
+    100% { transform:translateX(0); }
+}  
+.nav{
+    position:absolute;
+    top:50%;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    transform:translateY(-50%);
+    padding:0 20px;
+}
+
+.nav label{
+    background:rgba(255,255,255,0.6);
+    padding:10px 18px;
+    font-size:30px;
+    cursor:pointer;
+    border-radius:50%;
+    transition:0.3s;
+}
+
+.nav label:hover{
+    background:white;
+}
+/* Hero Banner Main Container */
+.hero-banner {
+    position: relative;
+    height: 80vh; /* திரையின் 80% உயரம் */
+    width: 100%;
+    overflow: hidden;
+    background-color: #fcf9f5; /* மென்மையான பின்னணி நிறம் */
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+/* Image Styling */
+.hero-image {
+    flex: 1.2;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* படம் சிதையாமல் இருக்க */
+    mask-image: linear-gradient(to right, black 80%, transparent 100%); /* படத்திற்கும் எழுத்திற்கும் மென்மையான இணைப்பு */
+}
+
+/* Text Content Styling */
+.hero-text {
+    flex: 0.8;
+    padding: 0 5%;
+    z-index: 2;
+}
+
+.new-arrival {
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: #b8860b; /* Gold நிறம் */
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cursive-title {
+    font-family: 'Playfair Display', serif; /* இதைப் பயன்படுத்த கூகுள் ஃபான்ட் தேவை */
+    font-size: 3.5rem;
+    color: #2c2c2c;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.separator {
+    width: 80px;
+    border: none;
+    height: 2px;
+    background-color: #b8860b;
+    margin: 25px 0;
+}
+
+.sub-text {
+    font-size: 1rem;
+    color: #555;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+/* Luxury Button Styling */
+.shop-btn {
+    padding: 15px 40px;
+    background-color: #2c2c2c;
+    color: white;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: 1px solid #2c2c2c;
+}
+
+.shop-btn:hover {
+    background-color: transparent;
+    color: #2c2c2c;
+    transform: translateY(-5px); /* லேசாக மேலே எழும்பும் */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+    }
+    .hero-text {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .separator {
+        margin: 20px auto;
+    }
+    .cursive-title {
+        font-size: 2.5rem;
+    }
+}
+/* Base Layout */
+.main-content {
+    background-color: #121212; /* Rich Dark Theme */
+    color: #ffffff;
+    padding: 0 40px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Hero Section Layout */
+.hero-container {
+    display: flex;
+    height: 95vh;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-left-image {
+    flex: 1.5;
+    height: 85%;
+}
+
+.hero-left-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* Typography & Content */
+.hero-center-text {
+    flex: 2;
+    padding: 0 40px;
+}
+
+.hero-center-text .label {
+    color: #c58c58; /* Copper/Gold Accent */
+    letter-spacing: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero-center-text h1 {
+    font-size: 4.8rem;
+    line-height: 1;
+    margin: 20px 0;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.hero-center-text p {
+    color: #b0b0b0;
+    max-width: 460px;
+    margin-bottom: 40px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+/* Luxury Button */
+.cta-btn {
+    padding: 20px 50px;
+    background-color: #c58c58;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.cta-btn:hover {
+    background-color: #d49a6a;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(197, 140, 88, 0.2);
+}
+
+/* Side Navigation Thumbnails */
+.hero-right-thumbs {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.hero-right-thumbs img {
+    width: 75px;
+    height: 100px;
+    object-fit: cover;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.hero-right-thumbs img:hover {
+    opacity: 1;
+    border-color: #c58c58;
+}
+
+/* Featured Collections Grid */
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    padding: 100px 0;
+}
+
+.category-card {
+    text-align: center;
+    overflow: hidden;
+}
+
+.category-card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.category-card:hover img {
+    transform: scale(1.05);
+}
+
+.category-card h3 {
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .hero-container { 
+        flex-direction: column; 
+        height: auto; 
+        padding-top: 100px;
+    }
+    .hero-center-text { text-align: center; padding: 40px 0; }
+    .hero-center-text h1 { font-size: 3.2rem; }
+    .hero-right-thumbs { 
+        flex-direction: row; 
+        justify-content: center; 
+        width: 100%; 
+    }
+    .featured-grid { grid-template-columns: 1fr; }
+}
+

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.container-fluid{
+    width:100%; 
+    font-family: 'Playfair Display', serif;  
+    background-color:#c2185b;
+}
+.row1{
+    width: 100%;
+     display: flex;   
+}
+.im1{
+    width: 400px;
+}
+ .im1 img{
+    width:100px;
+}
+.col2{
+display: flex;
+text-decoration: none;
+ margin-top: 20px;
+   background: linear-gradient(to right, #1a1608, #13130f); 
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 2s ease-in-out;
+  padding-left: 10px;
+}
+.col2 ul li{
+    display: inline;
+    font-size: 15px; 
+    padding-left: 50px;
+}
+.col2 Link{
+    text-decoration: none;}
+#cat{
+    padding-left: 150px;
+}

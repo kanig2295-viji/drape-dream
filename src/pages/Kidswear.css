@@ -4,7 +4,7 @@
     box-sizing: 0;
 }
 .container{
- background-color:#A9A6AF; 
+ background-color:#F9F5F0; 
  margin-left: 20px;
  margin-right: 20px; 
  font-family: 'Poppins', sans-serif;   
@@ -28,23 +28,24 @@
 }
 .col8{
   width: 100%;
+  padding-left: 10px;
 }
 .col8 img{
     width:220px;
     height:250px;  
-     border: 2px solid;
+    border: 1px solid;
     border-color:#A9A6AF;
     border-radius: 10px;
-    padding-left: 10px;
+    
 }
 .col8 button{
-    width:220px;
-    padding:12px;
-    background:#c2185b;
-    color:#fff;
+    width:70px;
+    padding:8px;
+    background:#F9F5F0; 
+    color:#0f0e0e;
     border:none;
     border-radius:8px;
-    font-size:16px;
+    font-size:13px;
     cursor:pointer;
     transition:0.3s;
 }
@@ -58,4 +59,13 @@
     font-size:16px;
     cursor:pointer;
     transition:0.3s;
+}
+.but h5{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+.but p{
+    text-align: center;
+    color: black;
 }

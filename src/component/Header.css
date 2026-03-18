@@ -6,7 +6,6 @@
 .container-fluid{
     width:100%; 
     font-family: 'Playfair Display', serif;  
-    background-color:#c2185b;
 }
 .row1{
     width: 100%;
@@ -22,7 +21,7 @@
 display: flex;
 text-decoration: none;
  margin-top: 20px;
-   background: linear-gradient(to right, #1a1608, #13130f); 
+    background: linear-gradient(to right, #1a1608, #13130f);  
    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: fadeIn 2s ease-in-out;
@@ -32,9 +31,12 @@ text-decoration: none;
     display: inline;
     font-size: 15px; 
     padding-left: 50px;
+color: black;
+text-decoration: none;
 }
 .col2 Link{
-    text-decoration: none;}
+    text-decoration: none;
+}
 #cat{
-    padding-left: 150px;
+    padding-left: 80px;
 }
